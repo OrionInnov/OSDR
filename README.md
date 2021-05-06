@@ -1,4 +1,3 @@
-# OSDR
 ### Overview
 
 The OSDR Q10 is one of Orion Innovations' derivative software defined radio products, capable of transmitting and receiving any wideband RF signal via four 8-bit fully synchronized channels. 
@@ -31,18 +30,17 @@ The table below lists various parameters for the OSDR Q10.
 | Onboard reference frequency | 40MHz           |                         |
 | Onboard reference accuracy  | +-10ppm         |                         |
 | Data transfer speed         | 3.3Gsps         | USB3.1, theoretical max |
-| Maximum sample rate         | 61.44Msps       |                         |
+| Minimum sample rate         | 2.5Msps         |                         |
+| Maximum sample rate         | 41.25Msps       | See note 1              |
 | Maximum RF bandwidth        | 56MHz           |                         |
 | Carrier frequency range     | 100MHz - 6GHz   |                         |
-| Carrier hopping time        | 41.25Msps       | Dependent on "hop size" |
 | Maximum gain @800MHz        | 74.5dB          | As per RF IC datasheet  |
 | Maximum gain @2.3GHz        | 73.0db          | As per RF IC datasheet  |
 | Maximum gain @5.5GHz        | 65.5dB          | As per RF IC datasheet  |
 | Maximum gain @6.0GHz        | ~60dB           | Empirically measured    |
 
+**Note 1: We guarantee usability at this clock speed over an onboard temperature range of 0°C to 85°C; however, we have been able to use this board at 61.44Msps without any fidelity loss at room temperature.
 
 ### Drivers and Documentation
 
-For instructions on how to get started, please visit [the official OSDR github repository](https://github.com/OrionInnov/OSDR).
-
-As a new product, our documentation is not 100% complete. Furthermore, the driver package currently only works in Linux, i.e. there is no Windows or Mac driver support just yet. If you have any questions and potential feature requests, feel free to open an issue on Github, or you can contact us directly at contact@oriontech.io. Thank you for bearing with us as we work to improve it!
+As a new product, our documentation is not 100% complete. Furthermore, the Python driver package and software display currently only works in Linux and Windows, i.e. there is no Mac driver support just yet. If you have any questions and potential feature requests, feel free to open an issue on Github, or you can contact us directly at contact@oriontech.io. Thank you for bearing with us as we work to improve it!
